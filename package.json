@@ -1,0 +1,19 @@
+{
+  "name": "shortgunnft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "start:server": "node server/app.js",
+    "start:client": "cd client && npm start",
+    "dev": "concurrently \"npm run start:server\"  \"npm run start:client\"",
+    "install": "concurrently \"cd client && npm i\" \"cd server && npm i\"",
+    "build": "cd client && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.1.0"
+  }
+}
